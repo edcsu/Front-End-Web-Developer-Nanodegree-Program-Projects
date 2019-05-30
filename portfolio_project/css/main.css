@@ -1,0 +1,150 @@
+
+/* Portfolio site logo */
+#logo {
+    height: 120px; 
+    width: 240px;
+}
+
+ /* Portfolio site header divider */
+.header_divider {
+    border-width: 5px;
+    border-color: #7d97ad;
+}
+
+ /* udacity blue color background */
+.udacity-blue-background {
+    background-color: #02b3e4;
+}
+
+ /* udacity black color background */
+.udacity-black-background {
+    background-color: #2d3c49;
+}
+
+ /* udacity grey color background */
+.udacity-grey-background {
+    background-color: #7d97ad;
+}
+
+ /* udacity grey color  */
+.udacity-grey-color {
+    color: #7d97ad;
+}
+
+ /* udacity blue color background */
+.udacity-blue-color {
+    color: #02b3e4;
+}
+
+ /* udacity black color background */
+.udacity-black-color {
+    color: #2d3c49;
+} 
+
+ /* jumbotron image background */
+.jumbotron {
+    background-image: url("/img/vs400.gif");
+    height: 400px;
+}
+
+/*
+* Footer
+*/
+.portfolio-footer {
+ padding: 2.5rem 0;
+ color: #999;
+ text-align: center;
+ background-color: #f9f9f9;
+ border-top: .05rem solid #e5e5e5;
+}
+.portfolio-footer p:last-child {
+ margin-bottom: 0;
+}
+
+/* Responsiveness */
+
+/* for extra small screens / phone */
+@media screen and (max-width: 576px) {
+    #logo {
+        height: 60px; 
+        width: 120px;
+    }
+
+    #author_text {
+        font-size: 20px;
+    }
+    
+    #author_position {
+        font-size: 16px;
+    }
+    
+    .card-img-top {
+        height: 350px;
+    }
+}
+
+/* for small screens / phone */
+@media screen and (min-width: 576px) {
+    #author_text {
+        font-size: 20px;
+    }
+    
+    #author_position {
+        font-size: 16px;
+    }
+    
+    .card-img-top {
+        height: 97px;
+    }
+
+    .card-title {
+        font-size: 16px;
+    }
+
+    .text-muted {
+        font-size: 12.5px;
+    }
+
+    #logo {
+        height: 120px; 
+        width: 160px;
+    }
+}
+
+/* for medium screens / tablet */
+@media screen and (min-width: 768px) {
+    
+    #author_text {
+        font-size: 28px;
+    }
+    
+    #author_position {
+        font-size: 24px;
+    }
+
+    #logo {
+        height: 120px; 
+        width: 200px;
+    }
+
+    .card-img-top {
+        height: 136px;
+    }
+
+}
+
+/* for large screens / desktop */
+@media screen and (min-width: 992px) {
+    .card-img-top {
+        height: 226px;
+    }
+
+    #author_text {
+        font-size: 40px;
+    }
+    
+    #author_position {
+        font-size: 28px;
+    }
+    
+}
