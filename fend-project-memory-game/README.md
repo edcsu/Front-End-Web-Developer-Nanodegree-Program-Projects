@@ -1,9 +1,6 @@
 # Memory Game Project (v1.0.0)
 **aka (Concetration game)**
 
-## Disclaimer!!!
-A **_double click_** on the **_same_** card will lead to malfunctioning of the game.
-
 ## Table of Contents
 
 * [Instructions](#instructions)
@@ -15,7 +12,8 @@ The game board consists of sixteen "cards" arranged in a grid. The deck is made 
 ## Instructions
 
 1. Open the **index.html** file in your favorite browser.
-2. By doing so, the game has started as the timer will have commenced.
+2. Press the start button to initiate the timer.
+3. By doing so, the game has started as the timer will have commenced.
     **Each turn:**
     1. The player flips one card over to reveal its underlying symbol.
     2. The player then turns over a second card, trying to find the corresponding       card with the same symbol.
