@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Matching Game</title>
+    <meta name="description" content="Matching cards game">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- Here is the main container that is used to apply custom container to the whole body of the game page -->
+    <div class="container">
+        <!-- Here is the main header that is used for the game-->
+        <header>
+            <h1 class="display-1">Matching Game</h1>
+        </header>
+
+        <!-- Here is my page's main content -->
+        <main >
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h3 class="modal-title" id="exampleModalCenterTitle">GAME ENDED</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body text-center">
+                
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+            </div>
+        </div>
+
+            <!-- An article for the game score panel -->                    
+            <article>
+                <section class="score-panel">
+                    <div class="row">
+                        <div class="col-2 ">
+                            <button type="button" class="btn btn-primary" onclick="initGame();" >Start</button>
+                        </div>
+                        <div class="col-5">
+                            <ul class="stars" >
+                                <li><i class="fa fa-star text-success"></i></li>
+                                <li><i class="fa fa-star text-success"></i></li>
+                                <li><i class="fa fa-star text-success"></i></li>
+                            </ul>
+                            <span class="moves">0 </span> Moves
+                        </div>
+                        <div class="col-4 align-items-center text-center">
+                            <span> <strong> Time: </strong> </span>
+                            <div id="timeElapsed">
+                                00:00:00
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <div class="restart align-items-center" onclick="restart();">
+                                <i class="fa fa-repeat text-danger" ></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+
+            <!-- An article for the game board -->                    
+            <article>
+                <section>
+                    <ul class="deck" id="game-board">
+                        <li class="card">
+                            <i class="fa fa-diamond"></i>
+                        </li>
+                        <li class="card">
+                            <i class="fa fa-paper-plane-o"></i>
+                        </li>
+                        <li class="card ">
+                            <i class="fa fa-anchor"></i>
+                        </li>
+                        <li class="card">
+                            <i class="fa fa-bolt"></i>
+                        </li>
+                        <li class="card">
+                            <i class="fa fa-cube"></i>
+                        </li>
+                        <li class="card ">
+                            <i class="fa fa-anchor"></i>
+                        </li>
+                        <li class="card">
+                            <i class="fa fa-leaf"></i>
+                        </li>
+                        <li class="card">
+                            <i class="fa fa-bicycle"></i>
+                        </li>
+                        <li class="card">
+                            <i class="fa fa-diamond"></i>
+                        </li>
+                        <li class="card">
+                            <i class="fa fa-bomb"></i>
+                        </li>
+                        <li class="card">
+                            <i class="fa fa-leaf"></i>
+                        </li>
+                        <li class="card">
+                            <i class="fa fa-bomb"></i>
+                        </li>
+                        <li class="card ">
+                            <i class="fa fa-bolt"></i>
+                        </li>
+                        <li class="card">
+                            <i class="fa fa-bicycle"></i>
+                        </li>
+                        <li class="card">
+                            <i class="fa fa-paper-plane-o"></i>
+                        </li>
+                        <li class="card">
+                            <i class="fa fa-cube"></i>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+        </main>
+        <!-- And here is my main footer that is used to the whole body of the game page -->
+        <footer class="text-center mt-2 mb-0 ">
+                <p>Built by <a href="https://twitter.com/skeith696">@skeith696</a>.</p>
+                    <a href="#">Back to top</a>
+                </p>
+
+        </footer>
+    </div>
+    <!-- The timer functionality -->
+    <script src="js/easytimer.min.js"></script>
+    <!-- The game functionality -->
+    <script src="js/app.js"></script>
+    <!-- JS for bootstrap to function -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
