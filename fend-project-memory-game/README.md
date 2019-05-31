@@ -22,7 +22,9 @@ The game board consists of sixteen "cards" arranged in a grid. The deck is made 
     5. The game ends once all cards have been correctly matched.
 
 ## Libraries
-- [Bootstrap v4](https://getbootstrap.com/docs/4.3/getting-started/introduction/) for simple color styles and flexbox functionalities.
-- [Animate CSS](https://daneden.github.io/animate.css/) for the card animations.
-- [EasyTimer.js](https://pages.github.com/) for the timer functionality
 
+- [Bootstrap v4](https://getbootstrap.com/docs/4.3/getting-started/introduction/) for simple color styles and flexbox functionalities.
+
+- [Animate CSS](https://daneden.github.io/animate.css/) for the card animations.
+
+- [EasyTimer.js](https://pages.github.com/) for the timer functionality
