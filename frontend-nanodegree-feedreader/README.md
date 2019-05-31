@@ -1,6 +1,6 @@
 # Project Overview
 
-This is a test-driven development (TDD) web-based application that reads RSS feeds. 
+This is a test-driven development (TDD) web-based application that reads RSS feeds.
 
 ## Table Of Contents
 
