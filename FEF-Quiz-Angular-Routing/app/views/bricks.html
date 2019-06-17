@@ -1,0 +1,17 @@
+<h2>{{brick.name}}</h2>
+
+<ul class="row bricksList">
+  <li class="col-sm-3 well brick-{{size}}" ng-repeat="(size, details) in brick.bricks">
+    <p>Size: {{size}}</p>
+    <p>Quantity: {{details.quantity}}</p>
+    <p>Price: {{details.price}}</p>
+    <p><button class="btn btn-success" ng-click="brick.addToCart(size, details.price)">Add to Cart</button></p>
+  </li>
+</ul>
+
+<div class=" panel">
+    <a class="btn btn-success" ui-sref="{{brick}}.cart" role="button" > {{brick.name}} Cart </a>
+</div>
+
+
+<div ui-view></div>
